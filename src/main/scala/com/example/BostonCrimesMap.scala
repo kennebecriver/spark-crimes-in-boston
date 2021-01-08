@@ -35,7 +35,7 @@ object BostonCrimesMap {
       .createOrReplaceTempView("robberyStatsTable")
 
     val result = spark.sql("" +
-      "SELECT DISTRICT from robberyStatsTable limit 10" +
+      "SELECT DISTRICT from robberyStatsTable limit 15" +
       "")
 
     result.show
